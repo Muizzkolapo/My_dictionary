@@ -8,7 +8,7 @@ with open('data.json') as f:
 
 def translate(my_input):
   my_input = my_input.lower()
-  my_compare = % get_close_matches(my_input, data.keys())[0])
+  my_compare =get_close_matches(my_input, data.keys())[0])
   if my_input in data:
       return data[my_input]
   elif my_input.upper() in data:
